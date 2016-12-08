@@ -1,0 +1,18 @@
+﻿@using AspnetReactHotReload.RazorHelpers
+
+<html>
+  <head>
+    <title>Aspnet React Hot-reload</title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" />
+  </head>
+  <body>
+		<div class="container">
+      <div id="content" />
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+
+		@ScriptHelper.Script("/js/index.bundle.js")
+  </body>
+</html>

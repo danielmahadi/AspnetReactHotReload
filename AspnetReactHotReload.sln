@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4F15F5FC-F9AE-488F-A524-B6898BC2405B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetReactHotReload", "src\AspnetReactHotReload\AspnetReactHotReload.csproj", "{AA00EFC5-8BE8-4F7D-9C3B-98F971FADDE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA00EFC5-8BE8-4F7D-9C3B-98F971FADDE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA00EFC5-8BE8-4F7D-9C3B-98F971FADDE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA00EFC5-8BE8-4F7D-9C3B-98F971FADDE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA00EFC5-8BE8-4F7D-9C3B-98F971FADDE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AA00EFC5-8BE8-4F7D-9C3B-98F971FADDE0} = {4F15F5FC-F9AE-488F-A524-B6898BC2405B}
+	EndGlobalSection
+EndGlobal

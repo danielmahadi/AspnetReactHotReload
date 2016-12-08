@@ -1,0 +1,76 @@
+﻿<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="**\*.cs" Exclude="$(GlobalExclude)" />
+    <EmbeddedResource Include="**\*.resx" Exclude="$(GlobalExclude)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Sdk.Web">
+      <Version>1.0.0-alpha-20161104-2-112</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Html.Abstractions">
+      <Version>1.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc">
+      <Version>1.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETCore.App">
+      <Version>1.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics">
+      <Version>1.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration">
+      <Version>1.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel">
+      <Version>1.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Console">
+      <Version>1.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles">
+      <Version>1.1.0</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="server.js" />
+    <None Include="package.json" />
+    <None Include="project.json" />
+    <None Include="webpack.config.js" />
+    <None Include="Views\Default\Index.cshtml" />
+    <None Include="Views\web.config" />
+    <None Include="ClientApp\Home\Index.js" />
+    <None Include="ClientApp\Index.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ClientApp\" />
+    <Folder Include="RazorHelpers\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\Default\" />
+    <Folder Include="ClientApp\Home\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <TextStylePolicy FileWidth="80" TabsToSpaces="True" RemoveTrailingWhitespace="True" NoTabsAfterNonTabs="False" EolMarker="Native" TabWidth="2" IndentWidth="2" inheritsSet="VisualStudio" inheritsScope="text/plain" scope="text/x-csharp" />
+          <CSharpFormattingPolicy IndentBlock="True" IndentBraces="False" IndentSwitchCaseSection="True" LabelPositioning="OneLess" NewLinesForBracesInTypes="True" NewLinesForBracesInMethods="True" SpaceWithinMethodDeclarationParenthesis="False" SpaceBetweenEmptyMethodDeclarationParentheses="False" SpaceWithinMethodCallParentheses="False" SpaceBetweenEmptyMethodCallParentheses="False" SpaceAfterControlFlowStatementKeyword="True" SpaceWithinExpressionParentheses="False" SpaceWithinCastParentheses="False" SpaceWithinOtherParentheses="False" SpaceAfterCast="False" SpacesIgnoreAroundVariableDeclaration="False" SpaceBetweenEmptySquareBrackets="False" SpaceWithinSquareBrackets="False" SpaceAfterColonInBaseTypeDeclaration="True" SpaceAfterComma="True" SpaceAfterDot="False" SpaceAfterSemicolonsInForStatement="True" SpaceBeforeColonInBaseTypeDeclaration="True" SpaceBeforeComma="False" SpaceBeforeDot="False" SpaceBeforeSemicolonsInForStatement="False" SpacingAroundBinaryOperator="Single" WrappingPreserveSingleLine="True" WrappingKeepStatementsOnSingleLine="True" PlaceSystemDirectiveFirst="True" IndentSwitchSection="True" NewLinesForBracesInProperties="True" NewLinesForBracesInAccessors="True" NewLinesForBracesInAnonymousMethods="True" NewLinesForBracesInControlBlocks="True" NewLinesForBracesInAnonymousTypes="True" NewLinesForBracesInObjectCollectionArrayInitializers="True" NewLinesForBracesInLambdaExpressionBody="True" NewLineForElse="True" NewLineForCatch="True" NewLineForFinally="True" NewLineForMembersInObjectInit="True" NewLineForMembersInAnonymousTypes="True" NewLineForClausesInQuery="True" SpacingAfterMethodDeclarationName="False" SpaceAfterMethodCallName="False" SpaceBeforeOpenSquareBracket="False" inheritsSet="Mono" inheritsScope="text/x-csharp" scope="text/x-csharp" />
+          <TextStylePolicy FileWidth="80" TabsToSpaces="True" RemoveTrailingWhitespace="True" NoTabsAfterNonTabs="False" EolMarker="Native" TabWidth="2" IndentWidth="2" inheritsSet="VisualStudio" inheritsScope="text/plain" scope="text/plain" />
+          <TextStylePolicy FileWidth="80" TabsToSpaces="True" RemoveTrailingWhitespace="True" NoTabsAfterNonTabs="False" EolMarker="Native" TabWidth="2" IndentWidth="2" inheritsSet="VisualStudio" inheritsScope="text/plain" scope="application/javascript" />
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>
